@@ -5,8 +5,10 @@ function ganhou() {
     document.getElementById('jogadorPontos').innerHTML = placar[0];
     document.getElementById('notifica-resultado').innerHTML = 'Você ganhou!';
     document.getElementById('notifica-resultado').setAttribute('class', 'ganhou');
-    Sleep(2000);
-    document.getElementById('notifica-resultado').setAttribute('class', 'esconde');
+    setTimeout(() => {
+        document.getElementById('notifica-resultado').setAttribute('class', 'esconde');
+        document.getElementById('pc').src = "assets/img/pc.png"
+    }, 2000);
 
 }
 
@@ -15,15 +17,19 @@ function perdeu() {
     document.getElementById('pcPontos').innerHTML = placar[1];
     document.getElementById('notifica-resultado').innerHTML = "Você perdeu ;(";
     document.getElementById('notifica-resultado').setAttribute('class', 'perdeu');
-    Sleep(2000);
-    document.getElementById('notifica-resultado').setAttribute('class', 'esconde');
+    setTimeout(() => {
+        document.getElementById('notifica-resultado').setAttribute('class', 'esconde');
+        document.getElementById('pc').src = "assets/img/pc.png";
+    }, 2000);
 }
 
 function empate() {
-    document.getElementById('notifica-resultado').innerHTML = "Empate!";
+    document.getElementById('notifica-resultado').innerHTML = "Deu empate!";
     document.getElementById('notifica-resultado').setAttribute('class', 'empate');
-    Sleep(2000);
-    document.getElementById('notifica-resultado').setAttribute('class', 'esconde');
+    setTimeout(() => {
+        document.getElementById('notifica-resultado').setAttribute('class', 'esconde');
+        document.getElementById('pc').src = "assets/img/pc.png";
+    }, 2000);
 }
 
 function reiniciar() {
