@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Roboto:wght@300;500&display=swap');
+
+#notifica-resultado {
+    color: white;
+    font-size: 1.2em;
+    float: right;
+}
+
+.esconde {
+    display: none;
+}
+
+.empate {
+    background-color: #094bcf;
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 .2em black;
+}
+
+.ganhou {
+    background-color: darkgreen;
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 .2em black;
+}
+
+.perdeu {
+    background-color: darkred;
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 .2em black;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: rgb(63, 69, 238);
+    background: linear-gradient(110deg, rgba(63, 69, 238, 1) 0%, rgba(122, 9, 186, 1) 50%, rgba(67, 1, 128, 1) 100%);
+}
+
+center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 .2em black;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+}
+
+input[name="escolha"] {
+    margin: 13px
+}
+
+input[type="submit"] {
+    background-color: rgb(63, 69, 238);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(67, 1, 128);
+    box-shadow: 0 0 .1em black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+small {
+    color: gray;
+}

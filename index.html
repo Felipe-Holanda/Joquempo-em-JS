@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Pedra, Papel e Tesoura</title>
+</head>
+<body>
+    <span id="notifica-resultado"></span>
+    <center>
+    <div class="container">
+        <div class="principal">
+            <br>
+            <h1>JS - Joquempô</h1>
+            <h3>Jogador:</h3>
+            <img src="./assets/img/pedra.png" alt="Pedra" >
+            <img src="./assets/img/papel.png" alt="Papel" >
+            <img src="./assets/img/tesoura.png" alt="Tesoura" >
+            <br>
+                <input type="radio" name="escolha" id="Pedra"><label for="Pedra">Pedra</label>
+                <input type="radio" name="escolha" id="Papel"><label for="Papel">Papel</label>
+                <input type="radio" name="escolha" id="Tesoura"><label for="Tesoura">Tesoura</label>
+                <p>
+                    <input type="submit" value="Jogar" onclick="jogar()">
+                    <input type="submit" value="Reiniciar" onclick="reiniciar()">
+                </p>
+            <hr>
+            <div class="robot">
+                <h3>Computador:</h3>
+                <img src="./assets/img/pc.png" alt="Simbolização de um computador" title="Ainda não escolhi" id="pc">
+            </div> 
+            <hr>
+            <div class="resultado">
+                <p><b>Você:</b> <span id="jogadorPontos">0</span> <b>Computador:</b> <span id="pcPontos"> 0</span></p>
+                <small>Para redefinir o placar, clique em "Reiniciar"</small>
+                <script src="./assets/scripts/jokenpo.js"></script>
+            </div>
+    </div>
+</div>
+</center>
+</body>
+</html>
